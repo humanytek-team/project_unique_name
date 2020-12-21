@@ -12,7 +12,7 @@ class ProjectProject(models.Model):
         ),
         (
             "project_name_unique",
-            "UNIQUE(name)",
+            "UNIQUE(company_id, name)",
             "Error! project name must be unique.",
         ),
     ]
